@@ -1,9 +1,11 @@
+#travis encrypt 253af5b54c1d9431260104c6e6037e9a41a4a69f
+
 dist : trusty
 addons:
   sonarcloud:
     organization: "5aguett1"
     token:
-      secure: "**************************" # encrypted value of your token
+      secure: "253af5b54c1d9431260104c6e6037e9a41a4a69f" # encrypted value of your token
 
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
