@@ -1,0 +1,11 @@
+dist : trusty
+addons:
+  sonarcloud:
+    organization: "5aguett1"
+    token:
+      secure: "**************************" # encrypted value of your token
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - sonar-scanner
+  
